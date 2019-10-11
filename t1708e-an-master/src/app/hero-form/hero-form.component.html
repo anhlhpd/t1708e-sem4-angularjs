@@ -1,0 +1,13 @@
+<p>hero-form works!</p>
+<h2>Hero Form</h2>
+<form [formGroup]="formGroup" >
+  <div>
+    Name: <input formControlName="name">
+  </div>
+  <div>
+    Description: <input formControlName="description">
+  </div>
+  <div>
+    <button value="Submit" (click)="doSave()"></button>
+  </div>
+</form>

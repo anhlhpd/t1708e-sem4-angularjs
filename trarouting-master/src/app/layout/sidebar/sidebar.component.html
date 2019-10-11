@@ -1,0 +1,12 @@
+<ul>
+  <li *ngFor="let module of routeGroups">
+    {{module.name}}
+    <ul>
+      <span *ngFor="let children of module.children">
+      <li *ngIf="children.data.display">
+        <a [routerLink]="[module.path, children.path]">{{children.data.name}}</a>
+      </li>
+      </span>
+    </ul>
+  </li>
+</ul>

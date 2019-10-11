@@ -1,0 +1,11 @@
+<p>product-form works!</p>
+<h1>Product Form</h1>
+<form [formGroup]="formGroup" ]>
+  <div>Name: <input formControlName="name" type="text"></div>
+  <div>Price: <input formControlName="price" type="number"></div>
+  <div>Image: <input formControlName="image" type="text"></div>
+  <div>Description: <input formControlName="description" type="text"></div>
+  <div>
+    <input type="submit" value="Save" (click)="doSave()">
+  </div>
+</form>

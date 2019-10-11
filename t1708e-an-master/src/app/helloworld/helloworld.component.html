@@ -1,0 +1,16 @@
+<div>
+  <h2>Hero list</h2>
+  <ul>
+    <li *ngFor="let hero of heroes">
+      <img src="{{ hero.image }}" alt="{{ hero.name}}">
+      {{ hero.name }}
+    </li>
+  </ul>
+</div>
+<div>
+    <div>Name <input type="text" [(ngModel)]="name"></div>
+    <div>Image <input type="text" [(ngModel)]="image"></div>
+    <div>
+      <input type="button" value="Submit" (click)="doSomething()">
+    </div>
+</div>
